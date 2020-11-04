@@ -283,7 +283,7 @@ export default {
   .vbt-autcomplete-list {
     padding-top: 5px;
     position: absolute;
-    max-height: 350px;
+    max-height: 500px;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     overflow-y: auto;
     z-index: 999;
