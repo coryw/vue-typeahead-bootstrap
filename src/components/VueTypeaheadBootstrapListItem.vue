@@ -11,7 +11,7 @@
     :class="textClasses"
   >
     <div class="sr-only">{{screenReaderText}}</div>
-    <div aria-hidden="true">
+    <div aria-hidden="true" class="py-2 px-2 border hover:bg-blue-300 active:bg-blue-400" style="border-top: 0px;">
       <slot name="suggestion" v-bind="{ data: data, htmlText: htmlText }">
         <span v-html="htmlText"></span>
       </slot>
@@ -47,7 +47,7 @@ export default {
 
   computed: {
     textClasses() {
-      const classes = ['vbst-item', 'list-group-item', 'list-group-item-action']
+      const classes = ['vbst-item', 'list-group-item', 'list-group-item-action', 'list-none', 'bg-blue-300']
       if (this.backgroundVariant) classes.push(`bg-${this.backgroundVariant}`)
       if (this.textVariant) classes.push(`text-${this.textVariant}`)
       if (this.disabled) classes.push('disabled')

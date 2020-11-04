@@ -17,7 +17,7 @@
         :id="`typeahead-input-${id}`"
         type="text"
         role="searchbox"
-        :class="`form-control ${inputClass}`"
+        :class="`form-control ${inputClass} form-input rounded-md shadow-sm mt-1 block w-full`"
         :aria-labelledby="ariaLabelledBy"
         aria-multiline="false"
         aria-autocomplete="list"
